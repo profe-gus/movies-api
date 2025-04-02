@@ -6,13 +6,13 @@ import showtimeRouter from './routes/showtime.routes';
 
 
 
+const app: Express = express();
 
-const app:Express = express();
+const port:number = 3000;
 
-const port = 3000;
-
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
+
 app.use("/users", userRouter);
 app.use("/movies", movieRouter) ;
 app.use("/showtime", showtimeRouter);
