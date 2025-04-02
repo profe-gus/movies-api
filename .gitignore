@@ -1,0 +1,20 @@
+# Ignorar node_modules
+node_modules/
+node_modules/.cache/
+
+# Ignorar la caché de MongoMemoryServer
+node_modules/.cache/mongodb-memory-server/
+
+# Ignorar archivos de entorno
+.env
+
+# Ignorar logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar compilaciones de TypeScript
+dist/
+app/
