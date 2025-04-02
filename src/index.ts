@@ -13,9 +13,9 @@ const port = 3000;
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-app.use("", userRouter);
-app.use("", movieRouter) ;
-app.use("", showtimeRouter);
+app.use("users", userRouter);
+app.use("movies", movieRouter) ;
+app.use("showtime", showtimeRouter);
 
 db.then(()=>{
     app.listen(port,() => {
